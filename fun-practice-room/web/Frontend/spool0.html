@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+ <title>login page</title>
+ <style>
+    #layout { 
+        display: flex;
+        flex-direction: row;
+    }
+
+    #left_box{
+        background-color: black;
+        height: 100vh;
+        width: 70%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #right_box{
+        background-color: gray;
+        height: 100vh;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    #vido_box{
+        width: 100%;
+        height: 74%;
+    }
+    #vido_box video{
+        width: 100%;
+        height: 100%;
+    }
+    @media (max-width: 500px){
+        #left_box{
+            display: none;
+        }
+        #right_box{
+            width: 100%;
+        }
+    }
+    #login_box{
+    background-color: rgb(0, 0, 0);
+    height: 30vh;
+    width: 80%;
+    margin-top: 0px;
+    
+    border-radius: 20px;
+    border: 5px solid white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20PX;
+    padding: 60px 40px;
+        box-sizing: border-box;
+        padding-top: 200px
+    }
+    #input_group{
+    display: flex;
+        box-sizing: border-box;
+    flex-direction: column;
+    gap: 12px;
+    width: 60%;  
+    }
+    #id_box:focus{
+     background-color: white;
+     height: 48px;
+     border-radius: 8px;
+     
+     padding-left: 12px;
+
+      outline: none;
+  border-color: #ffffff;
+    
+    }
+
+    #password_box:focus{
+  height: 48px;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+
+   outline: none;
+  border-color: #ffffff;
+}
+
+    #login_button:focus{
+     background-color: white;
+     height: 108px;
+     width: 120px;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 25px;
+
+    }
+    
+ </style>
+ </head>
+
+ <body>
+    <div id="layout">    
+        <div id="left_box">
+            <div id="vido_box">
+                <video src="video.mp4" controls autoplay muted loop></video>
+            </div>  
+        </div>
+        <div id="right_box">
+           <div id="login_box">
+              <div id="input_group">
+                 <input id="id_box" type="text" placeholder="ID">
+                 <input id="password_box" type="password" placeholder="Password">
+              </div>
+              <div id="login_button">Login</div>
+           </div>
+          
+        </div>
+    </div>
+  </body>
+
+</html>
